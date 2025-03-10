@@ -1,5 +1,8 @@
-.back{
-    margin-top:-21rem; 
-    margin-left:-46rem;
-    cursor: pointer;
+.field-h{
+    align-items: center;
+    display: flex;
+     justify-content: space-around;
+     text-align: center;
+      margin-left: -18rem;
+      gap: 23px;
 }

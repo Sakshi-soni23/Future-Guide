@@ -1,17 +1,10 @@
 /* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 .butn{
     border: 2px solid black;
     margin-left: 88rem;

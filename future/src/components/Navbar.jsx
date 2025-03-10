@@ -1,17 +1,22 @@
-import React from 'react'
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import "./Navbar.css"
+import "./Navbar.css";
+import bgImage from "./images/bg.avif";
+import { PiDotsThreeOutlineVerticalLight } from "react-icons/pi";
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar flex justify-around  align-middle text-center gap-[2rem] w-[98rem]  h-[36px] bg-[#fffcfc]">
-        <h1 className="text-[19px] font-bold font-sans cursor-pointer text-black">
-          FUTURE BRIGHT
-        </h1>
-        <nav>
-          <NavLink className=" ml-[10px] mr-[47px]" to={"/"}>
+      <nav className=" main-nav">
+        <div className="title ">
+          <h1>
+            <span>F</span>uture-
+            <span>G</span>uide
+          </h1>
+        </div>
+        <div className="menu-links col-span-[3/4] flex justify-around  max-[1000px]:hidden ">
+          <NavLink className="text-center" to={"/"}>
             Home <span className=""></span>
           </NavLink>
           <NavLink className="" to={"/Field"}>
@@ -26,13 +31,31 @@ const Navbar = () => {
           <NavLink className="" to={"/FeedBack"}>
             FeedBack <span className=""></span>
           </NavLink>
-          <NavLink className="" to={"/Loginpage"}>
+          {/* <NavLink className="" to={"/Loginpage"}>
             Login <span className=""></span>
+          </NavLink> */}
+          <NavLink className="side-icon ">
+            <PiDotsThreeOutlineVerticalLight />
           </NavLink>
-        </nav>
-      </div>
+        </div>
+      </nav>
+      <section className=" max-[1000px]:hidden">
+        {bgImage ? (
+          <img
+            src={bgImage}
+            alt="Background"
+            className=" ml-[15rem] mt-[59px]
+    w-[63rem]
+    h-[67vh]  cursor-pointer  max-[1000px]:ml-[91px]
+     max-[1000px]:w-[56rem]"
+          />
+        ) : null}
+        <h1 className=" head -mt-[27rem] ml-[53rem]  w-[21rem] max-[1000px]:ml-[35rem] max-[1000px]:-mt-[25rem]">
+          Shape Your Future By Choosing Correct Path Today !!
+        </h1>
+      </section>
     </>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
