@@ -56,14 +56,6 @@ function App() {
         </>
       ),
     },
-    {
-      path: "/Loginpage",
-      element: (
-        <>
-           <Loginpage/>
-        </>
-      ),
-    },
   ]);
   return  <RouterProvider router={router} />
 }

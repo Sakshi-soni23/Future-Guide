@@ -28,7 +28,7 @@ const Field = () => {
         <nav className="field-nav max-[700px]:hidden">
           <ul className="field-ul flex gap-[2rem] mt-[10px] cursor-pointer">
             {multimedia.map((menu, index) => (
-              <MenuItem items={menu} key={index} />
+              <MenuItem items={menu} key={index}/>
             ))}
           </ul>
         </nav>
