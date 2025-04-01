@@ -1,12 +1,13 @@
+
 const multimedia = [
   {
     title: "After 10th",
     submenu: [
-      { title: "PCM" },
-      { title: "PCB" },
-      { title: "PCM/B" },
-      { title: "COMMERCE" },
-      { title: "ARTS" },
+      { title: "PCM", path: "/stream/pcm" },
+      { title: "PCB", path: "/stream/pcb" },
+      { title: "PCM/B", path: "/stream/Pcmb" },
+      { title: "COMMERCE", path: "/stream/Arts" },
+      { title: "ARTS", path: "/stream/commerece" },
     ],
   },
   {

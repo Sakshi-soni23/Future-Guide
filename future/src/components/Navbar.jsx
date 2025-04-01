@@ -4,6 +4,7 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 import "./Navbar.css";
 import bgImage from "./images/bg.avif";
 import { PiDotsThreeOutlineVerticalLight } from "react-icons/pi";
+import aboutimg from "./images/aboutimg.jpg";
 
 const Navbar = () => {
   return (
@@ -44,7 +45,7 @@ const Navbar = () => {
           <img
             src={bgImage}
             alt="Background"
-            className=" ml-[15rem] mt-[59px]
+            className="main-img ml-[15rem] mt-[59px]
     w-[63rem]
     h-[67vh]  cursor-pointer  max-[1000px]:ml-[91px]
      max-[1000px]:w-[56rem]"
@@ -54,6 +55,14 @@ const Navbar = () => {
           Shape Your Future By Choosing Correct Path Today !!
         </h1>
       </section>
+      <div className="about">
+        <h1 className="mt-[24rem] ml-[96vh] text-[3rem]"> ABOUT</h1>
+        <div className="container-about">
+        <div className="about-footer">
+          
+        </div>
+        </div>
+      </div>
     </>
   );
 };

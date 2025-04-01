@@ -6,8 +6,13 @@ import Videos from "./components/videos";
 import FeedBAck from "./components/FeedBack";
 import Field from "./components/Field";
 import Home from "./components/Home";
-import Loginpage from "./components/Loginpage"
+import Pcm from "./components/Pcm";
+import Pcb from "./components/Pcb";
+import Arts from "./components/Arts";
+import Pcmb from "./components/PcmB";
+import Commerece from "./components/Commerece";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PcmB from "./components/PcmB";
 function App() {
   const [count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -25,7 +30,6 @@ function App() {
       element: (
         <>
           <Field />
-         
         </>
       ),
     },
@@ -33,7 +37,6 @@ function App() {
       path: "/Videos",
       element: (
         <>
-        
           <Videos />
         </>
       ),
@@ -42,7 +45,6 @@ function App() {
       path: "/Query",
       element: (
         <>
-         
           <Query />
         </>
       ),
@@ -51,13 +53,53 @@ function App() {
       path: "/FeedBack",
       element: (
         <>
-        
           <FeedBAck />
+        </>
+      ),
+    },
+    {
+      path: "/stream/pcm",
+      element: (
+        <>
+          <Pcm />
+        </>
+      ),
+    },
+    {
+      path: "/stream/pcb",
+      element: (
+        <>
+          <Pcb />
+        </>
+      ),
+    },
+    {
+      path: "/stream/Pcmb",
+      element: (
+        <>
+          < PcmB/>
+        </>
+      ),
+    },
+    {
+      path: "/stream/Arts",
+      element: (
+        <>
+          <Arts />
+        </>
+      ),
+    },
+    {
+      path: "/stream/commerece",
+      element: (
+        <>
+          <Commerece />
         </>
       ),
     },
   ]);
   return  <RouterProvider router={router} />
+  
 }
 
 export default App;
